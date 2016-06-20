@@ -58,3 +58,9 @@ fastlane/screenshots
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+#Carthage
+Carthage
+Cartfile.resolved
+
+.DS_Store

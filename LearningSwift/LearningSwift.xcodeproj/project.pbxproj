@@ -15,6 +15,9 @@
 		012448531D12CC8B00000E39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012448511D12CC8B00000E39 /* LaunchScreen.storyboard */; };
 		0124485E1D12CC8C00000E39 /* LearningSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0124485D1D12CC8C00000E39 /* LearningSwiftTests.swift */; };
 		012448691D12CC8C00000E39 /* LearningSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012448681D12CC8C00000E39 /* LearningSwiftUITests.swift */; };
+		013310421D17D99F0043901D /* 基础部分.json in Resources */ = {isa = PBXBuildFile; fileRef = 013310411D17D99F0043901D /* 基础部分.json */; };
+		0133104E1D17E8AE0043901D /* ModelRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0133104D1D17E8AE0043901D /* ModelRocket.framework */; };
+		017DB0851D13F593002C4721 /* SubMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017DB0841D13F593002C4721 /* SubMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,18 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		013310471D17E5FD0043901D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		012448431D12CC8B00000E39 /* LearningSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		012448461D12CC8B00000E39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +64,9 @@
 		012448641D12CC8C00000E39 /* LearningSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearningSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		012448681D12CC8C00000E39 /* LearningSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningSwiftUITests.swift; sourceTree = "<group>"; };
 		0124486A1D12CC8C00000E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		013310411D17D99F0043901D /* 基础部分.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "基础部分.json"; sourceTree = "<group>"; };
+		0133104D1D17E8AE0043901D /* ModelRocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ModelRocket.framework; path = Carthage/Build/iOS/ModelRocket.framework; sourceTree = "<group>"; };
+		017DB0841D13F593002C4721 /* SubMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubMenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0133104E1D17E8AE0043901D /* ModelRocket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +98,7 @@
 		0124483A1D12CC8B00000E39 = {
 			isa = PBXGroup;
 			children = (
+				0133104D1D17E8AE0043901D /* ModelRocket.framework */,
 				012448451D12CC8B00000E39 /* LearningSwift */,
 				0124485C1D12CC8C00000E39 /* LearningSwiftTests */,
 				012448671D12CC8C00000E39 /* LearningSwiftUITests */,
@@ -100,11 +120,12 @@
 			isa = PBXGroup;
 			children = (
 				012448461D12CC8B00000E39 /* AppDelegate.swift */,
-				012448481D12CC8B00000E39 /* FirstViewController.swift */,
+				017DB0861D13F59E002C4721 /* Indexs */,
 				0124484A1D12CC8B00000E39 /* SecondViewController.swift */,
 				0124484C1D12CC8B00000E39 /* Main.storyboard */,
 				0124484F1D12CC8B00000E39 /* Assets.xcassets */,
-				012448511D12CC8B00000E39 /* LaunchScreen.storyboard */,
+				013310431D17D9A50043901D /* JSONFile */,
+				013310411D17D99F0043901D /* 基础部分.json */,
 				012448541D12CC8B00000E39 /* Info.plist */,
 			);
 			path = LearningSwift;
@@ -128,6 +149,23 @@
 			path = LearningSwiftUITests;
 			sourceTree = "<group>";
 		};
+		013310431D17D9A50043901D /* JSONFile */ = {
+			isa = PBXGroup;
+			children = (
+				012448511D12CC8B00000E39 /* LaunchScreen.storyboard */,
+			);
+			name = JSONFile;
+			sourceTree = "<group>";
+		};
+		017DB0861D13F59E002C4721 /* Indexs */ = {
+			isa = PBXGroup;
+			children = (
+				012448481D12CC8B00000E39 /* FirstViewController.swift */,
+				017DB0841D13F593002C4721 /* SubMenuViewController.swift */,
+			);
+			name = Indexs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +176,8 @@
 				0124483F1D12CC8B00000E39 /* Sources */,
 				012448401D12CC8B00000E39 /* Frameworks */,
 				012448411D12CC8B00000E39 /* Resources */,
+				013310461D17E57E0043901D /* ShellScript */,
+				013310471D17E5FD0043901D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -233,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				012448531D12CC8B00000E39 /* LaunchScreen.storyboard in Resources */,
+				013310421D17D99F0043901D /* 基础部分.json in Resources */,
 				012448501D12CC8B00000E39 /* Assets.xcassets in Resources */,
 				0124484E1D12CC8B00000E39 /* Main.storyboard in Resources */,
 			);
@@ -254,11 +295,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		013310461D17E57E0043901D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ModelRocket.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0124483F1D12CC8B00000E39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				017DB0851D13F593002C4721 /* SubMenuViewController.swift in Sources */,
 				0124484B1D12CC8B00000E39 /* SecondViewController.swift in Sources */,
 				012448471D12CC8B00000E39 /* AppDelegate.swift in Sources */,
 				012448491D12CC8B00000E39 /* FirstViewController.swift in Sources */,
@@ -405,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = LearningSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanwenbin.LearningSwift;
@@ -416,6 +476,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = LearningSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanwenbin.LearningSwift;
@@ -488,6 +549,7 @@
 				0124486F1D12CC8C00000E39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		012448701D12CC8C00000E39 /* Build configuration list for PBXNativeTarget "LearningSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +558,7 @@
 				012448721D12CC8C00000E39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		012448731D12CC8C00000E39 /* Build configuration list for PBXNativeTarget "LearningSwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +567,7 @@
 				012448751D12CC8C00000E39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

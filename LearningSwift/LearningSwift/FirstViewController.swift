@@ -9,7 +9,7 @@
 import UIKit
 
 class FirstViewController: UITableViewController {
-    var menu = ["基础部分"];
+    var menu = ["基础部分", "基本运算符", "字符串和字符", "集合类型", "控制流", "函数", "闭包", "枚举", "类和结构体", "属性", "方法", "下标", "继承", "构造过程", "析构过程", "自动引用计数", "可选链", "错误处理", "类型转换", "嵌套类型", "扩展", "协议", "泛型", "访问控制", "高级运算符"];
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +30,11 @@ class FirstViewController: UITableViewController {
         cell.textLabel?.text = menu[indexPath.row]
         
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let vc = SubMenuViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
