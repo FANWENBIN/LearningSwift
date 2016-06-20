@@ -16,7 +16,7 @@
 		0124485E1D12CC8C00000E39 /* LearningSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0124485D1D12CC8C00000E39 /* LearningSwiftTests.swift */; };
 		012448691D12CC8C00000E39 /* LearningSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012448681D12CC8C00000E39 /* LearningSwiftUITests.swift */; };
 		013310421D17D99F0043901D /* 基础部分.json in Resources */ = {isa = PBXBuildFile; fileRef = 013310411D17D99F0043901D /* 基础部分.json */; };
-		0133104E1D17E8AE0043901D /* ModelRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0133104D1D17E8AE0043901D /* ModelRocket.framework */; };
+		013310501D17EFD90043901D /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0133104F1D17EFD90043901D /* SwiftyJSON.framework */; };
 		017DB0851D13F593002C4721 /* SubMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017DB0841D13F593002C4721 /* SubMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +65,7 @@
 		012448681D12CC8C00000E39 /* LearningSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningSwiftUITests.swift; sourceTree = "<group>"; };
 		0124486A1D12CC8C00000E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		013310411D17D99F0043901D /* 基础部分.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "基础部分.json"; sourceTree = "<group>"; };
-		0133104D1D17E8AE0043901D /* ModelRocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ModelRocket.framework; path = Carthage/Build/iOS/ModelRocket.framework; sourceTree = "<group>"; };
+		0133104F1D17EFD90043901D /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		017DB0841D13F593002C4721 /* SubMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubMenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0133104E1D17E8AE0043901D /* ModelRocket.framework in Frameworks */,
+				013310501D17EFD90043901D /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 		0124483A1D12CC8B00000E39 = {
 			isa = PBXGroup;
 			children = (
-				0133104D1D17E8AE0043901D /* ModelRocket.framework */,
+				0133104F1D17EFD90043901D /* SwiftyJSON.framework */,
 				012448451D12CC8B00000E39 /* LearningSwift */,
 				0124485C1D12CC8C00000E39 /* LearningSwiftTests */,
 				012448671D12CC8C00000E39 /* LearningSwiftUITests */,
@@ -302,7 +302,7 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/ModelRocket.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 			);
 			outputPaths = (
 			);
